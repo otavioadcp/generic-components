@@ -1,0 +1,14 @@
+import React from 'react';
+import {{name}}Styles from './{{name}}.styles'
+
+const {{name}}: React.FC = (props) => {
+    const classes = {{name}}Styles();
+
+    return(
+        <div className={classes.{{camelCase name}}Container}>
+            <h1>{{name}}</h1>
+        </div>
+    )
+}
+
+export default {{name}}
