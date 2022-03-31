@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import GenericTest from './GenericTest';
+import ThirdExample from './ThirdExample';
 
-describe('Given a GenericTest component', () => {
+describe('Given a ThirdExample component', () => {
   it('should render properly', () => {
-    let wrapper = shallow(<GenericTest />);
+    let wrapper = shallow(<ThirdExample />);
 
     expect(wrapper).toBeTruthy();
   });

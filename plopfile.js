@@ -25,6 +25,13 @@ export default function (plop) {
         path: "src/components/{{name}}/{{name}}.test.js",
         templateFile: "plop-templates/GenericComponentTest.js.hbs",
       },
+      {
+        type: "modify",
+        path: "src/ExampleModify.ts",
+        pattern:
+          /(\/\/ Plop will auto-import all generic components created here. Don't remove!)/g,
+        template: "import './components/{{name}}/{{name}}';\n$1",
+      },
     ], // array of actions
   });
 
