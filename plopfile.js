@@ -20,6 +20,11 @@ export default function (plop) {
         path: "src/components/{{name}}/{{name}}.styles.ts",
         templateFile: "plop-templates/GenericComponentStyle.ts.hbs",
       },
+      {
+        type: "add",
+        path: "src/components/{{name}}/{{name}}.test.js",
+        templateFile: "plop-templates/GenericComponentTest.js.hbs",
+      },
     ], // array of actions
   });
 
